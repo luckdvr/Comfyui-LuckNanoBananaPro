@@ -31,6 +31,7 @@
 
 > 如果你是手动把目录复制进 `custom_nodes`，新版 ComfyUI-Manager 可能不一定把它标成“已安装”。
 > 但只要 ComfyUI 启动日志没有导入报错，且节点列表里能搜到 **Luck Nano Banana Pro**，就说明节点已经正常加载。
+> 仓库示例工作流不包含真实 API Key，CI 也会阻止把真实 key 提交到仓库。
 
 ---
 
