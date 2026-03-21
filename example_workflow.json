@@ -1,0 +1,115 @@
+{
+  "last_node_id": 5,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LuckNanoBananaProNode",
+      "pos": [400, 200],
+      "size": [400, 450],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [1],
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [2],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LuckNanoBananaProNode"
+      },
+      "widgets_values": [
+        "",
+        "一只可爱的橘猫坐在窗台上，阳光洒在它身上，油画风格",
+        "gemini-3-pro-image-preview",
+        "1K",
+        "AUTO",
+        0,
+        1.0,
+        120,
+        6
+      ]
+    },
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [900, 200],
+      "size": [300, 300],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {}
+    },
+    {
+      "id": 3,
+      "type": "ShowText|pysssss",
+      "pos": [900, 550],
+      "size": [300, 100],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [""]
+    },
+    {
+      "id": 4,
+      "type": "Note",
+      "pos": [50, 50],
+      "size": [300, 400],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "【Luck Nano Banana Pro 使用说明】\n\n1. 获取 API Key\n   - 访问 api.apiyi.com 注册账号\n   - 在后台获取 API 密钥 (sk-xxx)\n\n2. 填写参数\n   - api_key: 填入你的 API 密钥\n   - prompt: 输入图片描述（中英文均可）\n   - model: 选择模型\n     · gemini-3-pro-image-preview (推荐)\n     · gemini-2.5-flash-image (更快)\n   - image_size: 分辨率 1K/2K/4K\n   - aspect_ratio: 宽高比\n   - seed: 种子值（相同种子可复现）\n   - temperature: 温度（越高越随机）\n   - timeout_seconds: 超时时间\n     · 1K 建议 120秒\n     · 2K 建议 300秒\n     · 4K 建议 600秒\n\n3. 图像编辑模式\n   - 连接图片到 image_01~14\n   - 在 prompt 描述修改内容\n\n4. 注意事项\n   - 不支持：去水印、换脸、NSFW\n   - 分享工作流前请清空 API Key！"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "Note",
+      "pos": [50, 500],
+      "size": [300, 150],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "【分辨率参考】\n\n宽高比  |  1K  |  2K  |  4K\n1:1    | 1024 | 2048 | 4096\n16:9   | 1376×768 | 2752×1536\n9:16   | 768×1376 | 1536×2752\n\n价格：约 $0.05/张"
+      ]
+    }
+  ],
+  "links": [
+    [1, 1, 0, 2, 0, "IMAGE"],
+    [2, 1, 1, 3, 0, "STRING"]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
