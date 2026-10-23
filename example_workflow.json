@@ -31,12 +31,12 @@
       "widgets_values": [
         "",
         "一只可爱的橘猫坐在窗台上，阳光洒在它身上，油画风格",
-        "gemini-3-pro-image-preview",
+        "gemini-nano-banana-2.1",
         "1K",
         "AUTO",
         0,
         1.0,
-        120,
+        360,
         6
       ]
     },
@@ -87,7 +87,7 @@
       "mode": 0,
       "properties": {},
       "widgets_values": [
-        "【Luck Nano Banana Pro 使用说明】\n\n1. 获取 API Key\n   - 访问 api.apiyi.com 注册账号\n   - 在后台获取 API 密钥 (sk-xxx)\n\n2. 填写参数\n   - api_key: 填入你的 API 密钥\n   - prompt: 输入图片描述（中英文均可）\n   - model: 选择模型\n     · gemini-3-pro-image-preview (推荐)\n     · gemini-2.5-flash-image (更快)\n   - image_size: 分辨率 1K/2K/4K\n   - aspect_ratio: 宽高比\n   - seed: 种子值（相同种子可复现）\n   - temperature: 温度（越高越随机）\n   - timeout_seconds: 超时时间\n     · 1K 建议 120秒\n     · 2K 建议 300秒\n     · 4K 建议 600秒\n\n3. 图像编辑模式\n   - 连接图片到 image_01~14\n   - 在 prompt 描述修改内容\n\n4. 注意事项\n   - 不支持：去水印、换脸、NSFW\n   - 分享工作流前请清空 API Key！"
+        "【Luck Nano Banana Pro 使用说明】\n\n1. 获取 API Key\n   - 访问 api.apiyi.com 注册账号\n   - 在后台获取 API 密钥 (sk-xxx)\n\n2. 填写参数\n   - api_key: 填入你的 API 密钥\n   - prompt: 输入图片描述（中英文均可）\n   - model: 默认 gemini-nano-banana-2.1\n     · 保留 Nano Banana 2、Pro 和 2.5 模型\n   - image_size: 分辨率 1K/2K/4K，不支持512\n   - aspect_ratio: AUTO 或14种固定比例\n   - seed: 种子值\n   - temperature: 温度（越高越随机）\n   - timeout_seconds: 默认360秒\n     · NB2.1 实际至少等待360秒\n     · 4K、多图可设为600秒\n   - retry_times: 总尝试次数，含首次请求\n\n3. 图像编辑模式\n   - 连接图片到 image_01~14\n   - 在 prompt 描述修改内容\n\n4. 注意事项\n   - NB2.1 读取超时或断连后停止自动重发\n   - 服务端可能仍在生成并计费，请先核对调用日志\n   - 分享工作流前请清空 API Key！"
       ]
     },
     {
@@ -100,7 +100,7 @@
       "mode": 0,
       "properties": {},
       "widgets_values": [
-        "【分辨率参考】\n\n宽高比  |  1K  |  2K  |  4K\n1:1    | 1024 | 2048 | 4096\n16:9   | 1376×768 | 2752×1536\n9:16   | 768×1376 | 1536×2752\n\n价格：约 $0.05/张"
+        "【NB2.1 输出说明】\n\n分辨率：1K / 2K / 4K\n支持14种固定比例，包括1:8和8:1。\nAUTO 由模型按内容决定比例。\n具体像素尺寸以实际返回图片为准。\n\n计费取决于令牌设置，请以 API易控制台和当前模型价格为准。\n文档：https://docs.apiyi.com/api-capabilities/gemini-nano-banana-2.1/overview"
       ]
     }
   ],
